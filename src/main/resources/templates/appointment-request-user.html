@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Randevu Talebi</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; color: #333; background-color: #f4f4f4; }
+        .container { padding: 20px; border: 1px solid #ddd; border-radius: 8px; background-color: #ffffff; max-width: 600px; margin: auto; }
+        .header { background-color: #ffc107; color: #333; padding: 10px; text-align: center; border-top-left-radius: 8px; border-top-right-radius: 8px; }
+        h1 { margin-top: 0; color: #333; }
+        p { line-height: 1.6; }
+        ul { list-style-type: none; padding-left: 0; }
+        li { margin-bottom: 10px; }
+        strong { color: #0056b3; }
+        .footer { margin-top: 20px; font-size: 0.9em; text-align: center; color: #777; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Randevu Talebiniz Alındı!</h1>
+        </div>
+        <p>Merhaba <strong th:text="${userName}">[Kullanıcı Adı]</strong>,</p>
+        <p>Randevu talebiniz başarıyla alınmıştır ve onay beklemektedir. Detaylar aşağıdadır:</p>
+        <ul>
+            <li><strong>Sağlayıcı:</strong> <span th:text="${providerBusinessName}">[Sağlayıcı İşletme Adı]</span></li>
+            <li><strong>Hizmet:</strong> <span th:text="${serviceName}">[Hizmet Adı]</span></li>
+            <li><strong>Tarih:</strong> <span th:text="${appointmentDate}">[Tarih]</span></li>
+            <li><strong>Saat:</strong> <span th:text="${appointmentTime}">[Saat]</span></li>
+            <li><strong>Süre:</strong> <span th:text="${duration}">[Süre]</span> dakika</li>
+            <li><strong>Notlar:</strong> <span th:text="${notes ?: '-'}">[Notlar]</span></li>
+        </ul>
+        <p>Randevunuz onaylandığında size tekrar bilgi verilecektir.</p>
+        <div class="footer">
+            <p>Saygılarımızla,<br/>Randevu Sistemi Ekibi</p>
+        </div>
+    </div>
+</body>
+</html>

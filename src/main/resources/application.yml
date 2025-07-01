@@ -1,0 +1,5 @@
+# JWT Configuration
+jwt:
+  secret: yourVeryLongAndSecureSecretKeyHereShouldBeAtLeast256BitsForSecurity
+  expiration: 86400000
+  issuer: RandevuSistemiAPI
