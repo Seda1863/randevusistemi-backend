@@ -10,7 +10,10 @@ Users can easily book appointments, while providers (doctors, consultants, haird
 ⸻
 
 🛠️ Tech Stack
-	•	Backend: Java 17, Spring Boot 3, Spring Security (JWT with RSA keys), JPA, Hibernate, PostgreSQL
+	•	Backend: Java 17, Spring Boot 3, Spring Security (JWT with RSA keys), JPA, Hibernate, PostgreSQL<img width="286" height="193" alt="Screenshot 2025-09-25 at 20 45 28" src="https://github.com/user-attachments/assets/87f2c986-a36b-44b5-823d-08589d095a39" />
+<img width="381" height="258" alt="Screenshot 2025-09-25 at 20 45 22" src="https://github.com/user-attachments/assets/f2c1dcb5-1bcc-47e8-b0cb-33e0732e57dc" />
+<img width="256" height="386" alt="Screenshot 2025-09-25 at 20 45 16" src="https://github.com/user-attachments/assets/66fd9e2b-aa83-4f8f-bca3-0804a78201c8" />
+
 	•	Frontend: Angular (standalone structure), Tailwind CSS
 	•	Database: PostgreSQL
 	•	Mail Service: Spring EmailService with SMTP for verification and notifications
