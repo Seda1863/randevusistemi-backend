@@ -1,28 +1,58 @@
-Smart Appointment and Scheduling System
 
-Akıllı randevu ve takvim yönetimi sağlayan modern bir web uygulamasıdır. Kullanıcılar randevu alabilir, sağlayıcılar (doktor, danışman, kuaför vb.) ise kendi uygunluklarını belirleyip takvimlerini yönetebilir.
-	•	Backend: Java 17, Spring Boot 3, Spring Security (JWT - RSA key based), JPA, Hibernate, PostgreSQL
-	•	Frontend: Angular (standalone structure), Tailwind CSS
-	•	Veritabanı: PostgreSQL
-	•	Mail: Spring EmailService ile SMTP üzerinden doğrulama ve bildirim mailleri
-	•	Yapılandırma: Token tabanlı güvenlik, kullanıcı rolleri, CORS ayarları, response modelleme
 
 ⸻
-Güvenlik Yapısı
-	•	JWT (public/private RSA key) ile token doğrulama
-	•	AuthenticationManager, PasswordEncoder, JwtDecoder/Encoder, SecurityFilterChain gibi Spring bileşenleriyle yapılandırıldı
-	•	Role-based erişim kontrolü
- Backend Çalıştırma (Spring Boot)
- cd randevusistemi-backend
+
+Smart Appointment and Scheduling System
+
+A modern web application that provides smart appointment and calendar management.
+Users can easily book appointments, while providers (doctors, consultants, hairdressers, etc.) can set their availability and manage their schedules.
+
+⸻
+
+🛠️ Tech Stack
+	•	Backend: Java 17, Spring Boot 3, Spring Security (JWT with RSA keys), JPA, Hibernate, PostgreSQL
+	•	Frontend: Angular (standalone structure), Tailwind CSS
+	•	Database: PostgreSQL
+	•	Mail Service: Spring EmailService with SMTP for verification and notifications
+	•	Configuration: Token-based security, role-based access control, CORS setup, response modeling
+
+⸻
+
+🔒 Security
+	•	JWT authentication with RSA public/private key pair
+	•	Configured with Spring components such as:
+	•	AuthenticationManager, PasswordEncoder, JwtDecoder/Encoder, SecurityFilterChain
+	•	Role-based access control to restrict and manage permissions
+
+⸻
+
+🚀 Running the Project
+
+Backend (Spring Boot)
+
+cd randevusistemi-backend
 ./mvnw spring-boot:run
-Frontend Çalıştırma (Angular)
+
+Frontend (Angular)
+
 cd randevusistemi-frontend
 npm install
 ng serve
-Özellikler
-	•	📧 E-posta doğrulamalı kayıt
-	•	🗓️ Takvim ve müsaitlik ayarları
-	•	✅ Randevu alma, iptal etme, geçmişi görüntüleme
-	•	🧠 Admin paneli (Dashboard)
-	•	🛡️ Role-based erişim
-	•	📊 Gerçek zamanlı istatistik ve yönetim ekranı
+
+
+⸻
+
+✨ Features
+	•	📧 Email verification during sign-up
+	•	🗓️ Calendar and availability settings for providers
+	•	✅ Book, cancel, and view appointment history
+	•	🧠 Admin dashboard for management
+	•	🛡️ Role-based access control
+	•	📊 Real-time statistics and monitoring
+
+⸻
+
+👉 This project focuses on providing a secure, user-friendly, and scalable appointment system, combining a powerful Spring Boot backend with a modern Angular frontend.
+
+⸻
+
